@@ -9,43 +9,45 @@
 <body>
     <div class="calculator">
         <div class="main-screen">
-            <input type="text" name="screen" id="screen">
+            <input type="text" name="screen" id="screen" disabled>
         </div>
 
         <div class="row">
-            <button class="calc-btn">C</button>
-            <button class="calc-btn">+/-</button>
-            <button class="calc-btn">%</button>
-            <button class="calc-btn">DEL</button>
+            <button class="calc-btn cancel">C</button>
+            <button class="calc-btn num-sign">+/-</button>
+            <button class="calc-btn percent">%</button>
+            <button class="calc-btn delete">DEL</button>
         </div>
 
         <div class="row">
             <button class="calc-btn number">7</button>
             <button class="calc-btn number">8</button>
             <button class="calc-btn number">9</button>
-            <button class="calc-btn operators">÷</button>
+            <button class="calc-btn operators divide">÷</button>
         </div>
 
         <div class="row">
             <button class="calc-btn number">4</button>
             <button class="calc-btn number">5</button>
             <button class="calc-btn number">6</button>
-            <button class="calc-btn operators">×</button>
+            <button class="calc-btn operators multiply">×</button>
         </div>
 
         <div class="row">
             <button class="calc-btn number">1</button>
             <button class="calc-btn number">2</button>
             <button class="calc-btn number">3</button>
-            <button class="calc-btn operators">-</button>
+            <button class="calc-btn operators subtract">-</button>
         </div>
 
         <div class="row">
-            <button class="calc-btn">0</button>
+            <button class="calc-btn number">0</button>
             <button class="calc-btn">.</button>
             <button class="calc-btn equal-operator">=</button>
-            <button class="calc-btn operators">+</button>
+            <button class="calc-btn operators sum">+</button>
         </div>
     </div>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

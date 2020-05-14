@@ -9,9 +9,8 @@
 }
 
 body {
+    min-height: 100%;
     margin: 0;
-    display: flex;
-    justify-content: center;
     background-image: url('../6.gif');
     background-position: center center;
     background-repeat: no-repeat;
@@ -20,9 +19,9 @@ body {
 }
 
 .calculator {
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     width: 30%;
     background-color: var(--main-color);
 }
@@ -41,7 +40,7 @@ body {
     padding: 10px;
     color: var(--text-color);
     text-align: right;
-    font-size: 3.25em;
+    font-size: 3.5em;
     font-family: var(--font);
 }
 
@@ -83,11 +82,5 @@ body {
 @media (max-width: 420px) {
     .calculator {
         width: 100%;
-    }
-}
-
-@media (max-height: 600px) {
-    .calc-btn {
-        height: 75px;
     }
 }
