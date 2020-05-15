@@ -64,6 +64,10 @@ body {
     background-color: #ca9d9c;
 }
 
+.calc-btn:active {
+    background-color: #ca7090;
+}
+
 .operators {
     background-color: #c49190;
 }

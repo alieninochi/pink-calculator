@@ -2,12 +2,9 @@ const input = document.querySelector('#screen');
 const numberButton = document.querySelectorAll('.number');
 const numberSign = document.querySelector('.num-sign');
 const percent = document.querySelector('.percent');
-const cancel = document.querySelector('.cancel');
+const clear = document.querySelector('.clear');
 const del = document.querySelector('.delete');
-
-// numberButton.addEventListener('click', () => {
-//     input.value += numberButton.innerText;
-// });
+const dot = document.querySelector('.dot');
 
 numberButton.forEach(element => {
     element.addEventListener('click', () => {
@@ -15,10 +12,28 @@ numberButton.forEach(element => {
     });
 });
 
-cancel.addEventListener('click', () => {
+dot.addEventListener('click', () => {
+    if (input.value.indexOf('.') !== -1) {
+        input.value += '';
+    } else {
+        input.value += '.';
+    }
+});
+
+clear.addEventListener('click', () => {
     input.value = '';
 });
 
-// del.addEventListener('click', evt => {
-//     input.value.length -= 1;
-// });
+del.addEventListener('click', () => {
+    input.value = input.value.substring(0, input.value.length - 1);
+});
+
+numberSign.addEventListener('click', () => {
+    if (input.value.indexOf('-') !== -1) {
+        input.value = input.value.slice(1);
+    } else if (input.value === '') {
+        input.value = '-';
+    } else {
+        input.value = `-${input.value}`;
+    }
+});
