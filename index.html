@@ -9,6 +9,7 @@
 <body>
     <div class="calculator">
         <div class="main-screen">
+            <label for="screen"></label>
             <input type="text" name="screen" id="screen" disabled>
         </div>
 
@@ -23,31 +24,32 @@
             <button class="calc-btn number">7</button>
             <button class="calc-btn number">8</button>
             <button class="calc-btn number">9</button>
-            <button class="calc-btn operators divide">÷</button>
+            <button class="calc-btn operators">÷</button>
         </div>
 
         <div class="row">
             <button class="calc-btn number">4</button>
             <button class="calc-btn number">5</button>
             <button class="calc-btn number">6</button>
-            <button class="calc-btn operators multiply">×</button>
+            <button class="calc-btn operators">×</button>
         </div>
 
         <div class="row">
             <button class="calc-btn number">1</button>
             <button class="calc-btn number">2</button>
             <button class="calc-btn number">3</button>
-            <button class="calc-btn operators subtract">-</button>
+            <button class="calc-btn operators">-</button>
         </div>
 
         <div class="row">
             <button class="calc-btn number">0</button>
             <button class="calc-btn dot">.</button>
-            <button class="calc-btn equal-operator">=</button>
-            <button class="calc-btn operators sum">+</button>
+            <button class="calc-btn equal">=</button>
+            <button class="calc-btn operators">+</button>
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.0.0/math.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
