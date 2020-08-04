@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +7,7 @@
 :root {
     --main-color: #bd8583;
     --text-color: #f0f8ff;
-    --font: 'Courier New', Courier, monospace;
+    --font: 'VT323', Courier, monospace;
     --border: 1px solid #d7b6b5;
 }
 
